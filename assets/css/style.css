@@ -1,0 +1,344 @@
+/* Font: Work sans
+Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115)  */
+
+/* ===================================
+          Allgemeines
+=================================== */
+
+@font-face {
+    font-family: workSans;
+    src: url("../fonts/WorkSans-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: workSans;
+    color: rgb(115, 115, 115);
+    word-spacing: 0.5rem;
+    background-color: #2e2e2e;
+}
+
+main {
+    font-size: 1.5rem;
+}
+
+h2,
+h1 {
+    color: rgb(234, 204, 194);
+}
+
+/* ===================================
+          Header nav
+=================================== */
+
+header {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 7rem;
+    position: fixed;
+    width: 100%;
+}
+
+header nav ul li a {
+
+    text-decoration: none;
+    color: rgb(115, 115, 115);
+}
+
+header nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+
+.li__nav1 {
+    margin-left: 3rem;
+}
+
+/* ===================================
+          Header h1
+=================================== */
+
+header h1 {
+    text-align: left;
+    width: 50rem;
+    margin: 0 auto;
+    padding: 15rem 5rem 5rem 5rem;
+    color: rgb(234, 204, 194);
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+/* ===================================
+          Main
+=================================== */
+.main__index {
+    background-color: #2e2e2e;
+    padding: 5rem;
+    font-size: 1.5rem;
+}
+
+/* ===================================
+          Main section1
+=================================== */
+.section1__main {
+    background-image: url("../img/section-about-1.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.ul__section1__main {
+    list-style: none;
+    padding-top: 40rem;
+}
+
+.ul__section1__main li {
+    padding: 5rem 2rem;
+}
+
+.ul__section1__main li a {
+    text-decoration: none;
+    color: rgb(115, 115, 115);
+    font-size: 2rem;
+}
+
+.ul__section1__main li a:hover {
+    color: white;
+}
+
+
+/* ===================================
+          Main section2
+=================================== */
+.section2__main {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+
+}
+
+.section2__main img {
+    width: 35rem;
+    height: 30rem;
+
+}
+
+.article__section2 {
+    padding: 5rem;
+    width: 50rem;
+}
+
+.article__section2 h2 {
+    padding-bottom: 2rem;
+    color: rgb(234, 204, 194);
+}
+
+.article__section2 p {
+    padding-bottom: 2rem;
+}
+
+/* ===================================
+         Lounger main 
+=================================== */
+
+.main__lounger {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.section1__main__lounger {
+    background-image: url("../img/section-voyager.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 2;
+}
+
+.section2__main__lounger {
+    text-align: left;
+    flex: 1;
+}
+
+.section2__main__lounger article {
+    padding-top: 15rem;
+    width: 60rem;
+    margin: 0 5rem 0rem 5rem;
+}
+
+.section2__main__lounger article h2 {
+    margin-bottom: 5rem;
+}
+
+.section2__main__lounger article p {
+
+    padding-right: 14.5rem;
+    margin-bottom: 2rem;
+}
+
+/* ===================================
+         Experience main 
+=================================== */
+
+.main__experience {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.section1__experience {
+    background-image: url("../img/section-experience-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 2;
+}
+
+.section2__experience {
+    text-align: left;
+    flex: 1;
+}
+
+.section2__experience article {
+    padding-top: 15rem;
+    width: 60rem;
+    margin: 0 5rem 0rem 5rem;
+}
+
+.section2__experience article h2 {
+    margin-bottom: 5rem;
+}
+
+.section2__experience article p {
+
+    padding-right: 14.5rem;
+    margin-bottom: 2rem;
+}
+
+/* ===================================
+         Inspiration main
+=================================== */
+.section__video {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+    margin: 15rem auto;
+}
+
+.section__article {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto 15rem auto;
+    /* background-color: blue; */
+}
+
+.article__alchemy {
+    font-size: 2rem;
+    /* background-color: antiquewhite; */
+    color: rgb(234, 204, 194);
+}
+
+.article__alchemy p {
+    color: rgb(115, 115, 115);
+    font-size: 1.5rem;
+}
+
+.p__weDefine {
+    padding-bottom: 10rem;
+}
+
+.article__alchemy h2 {
+    padding: 1rem 0 3rem 0;
+}
+
+.div__article {
+    display: flex;
+    text-align: center;
+}
+
+.div__article p {
+    border: solid 1px white;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.article__withIMG {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.img__width {
+    width: 50%;
+}
+
+.div__articleWithImg h2 {
+    padding: 1rem 0 3rem 0rem
+}
+
+.div__articleWithImg p {
+    line-height: 2.5rem;
+}
+
+#img_2 {
+    order: 1;
+}
+
+/* ===================================
+         Shop main
+=================================== */
+
+.main__shop {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+}
+
+.section1_shop {
+    background-image: url("../img/section-composition4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1.2;
+}
+
+.section2_shop {
+    flex: 1;
+}
+
+.section2_shop p {
+    margin-bottom: 2rem;
+}
+
+.section2_shop h2 {
+    margin-bottom: 1rem;
+}
+
+.section2_shop img {
+    margin-top: 4rem;
+}
+
+button {
+    padding: 1rem 2rem;
+}
