@@ -1,9 +1,9 @@
 /* Font: Work sans
 Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115)  */
 
-/* ===================================
-          Allgemeines
-=================================== */
+/* !===================================
+  !        Allgemeines
+!=================================== */
 
 @font-face {
     font-family: workSans;
@@ -33,9 +33,9 @@ h1 {
     color: rgb(234, 204, 194);
 }
 
-/* ===================================
-          Header nav
-=================================== */
+/** ===================================
+  **        Header nav
+**=================================== */
 
 header {
     font-size: 1.5rem;
@@ -67,9 +67,9 @@ header nav ul {
     margin-left: 3rem;
 }
 
-/* ===================================
-          Header h1
-=================================== */
+/** ===================================
+  **        Header h1
+**=================================== */
 
 header h1 {
     text-align: left;
@@ -81,18 +81,141 @@ header h1 {
     font-size: 3rem;
 }
 
-/* ===================================
-          Main
-=================================== */
+/*? ===================================
+  /*?        Main
+/*?=================================== */
 .main__index {
     background-color: #2e2e2e;
     padding: 5rem;
     font-size: 1.5rem;
 }
 
-/* ===================================
-          Main section1
-=================================== */
+/* Navbar links */
+
+main nav {
+    /* background-color: red; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+main nav div {
+
+    border: white solid 1px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+main nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+
+main nav ul li {
+    display: flex;
+    gap: 2rem;
+    padding-left: 1rem;
+}
+
+main nav ul div::before {
+    display: inline-block;
+    content: "";
+    height: 33px;
+    border-left: solid white 1px;
+    position: relative;
+    left: 6.5px;
+    top: 13px;
+}
+
+
+
+
+main nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main nav ul li a:hover {
+    color: antiquewhite;
+}
+
+
+.activeAbout::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: solid #fff 2px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    top: 266.5px;
+    right: 108.6px;
+}
+
+.activeLounger::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: solid #fff 2px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    top: 324.5px;
+    right: 108.6px;
+}
+
+.activeExperience::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: solid #fff 2px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    top: 381.5px;
+    right: 108.6px;
+}
+
+.activeInspiration::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: solid #fff 2px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    top: 439.5px;
+    right: 108.6px;
+}
+
+.activeShop::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    border: solid #fff 2px;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    top: 496.5px;
+    right: 108.6px;
+}
+
+/*? ===================================
+ /*?         Main section1
+/*?=================================== */
+
 .section1__main {
     background-image: url("../img/section-about-1.jpg");
     background-position: center;
@@ -121,9 +244,9 @@ header h1 {
 }
 
 
-/* ===================================
-          Main section2
-=================================== */
+/*? ===================================
+/*?          Main section2
+/*?=================================== */
 .section2__main {
     display: flex;
     justify-content: center;
